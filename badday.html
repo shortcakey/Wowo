@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>A gift from me to you</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./badday.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+        <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            VANTA.BIRDS({
+                el: "#vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color1: 0xa96ce1,
+                color2: 0x53c89a,
+                colorMode: "lerpGradient",
+                birdSize: 0.50,
+                speedLimit: 2.00,
+                alignment: 15.00,
+                quantity: 3.00,
+                backgroundAlpha: 0.0,
+            })
+            
+            setTimeout(() => {
+                const main = document.querySelector('main')
+                main.style.opacity = 1
+                main.style.filter = 'blur(0px)'
+            }, 1000)
+        })
+        </script>
+    </head>
+    <body>
+        <div id="vanta"></div>
+        <main class="animated">
+            <header>
+                <img src="./images/badday.png"/>
+                <h1>To Someone Special</h1>
+            </header>
+            <p>
+                <img src="./images/baddayletter.png" alt="BadDayLetter" >
+            </p>
+            <ul>
+                </li>
+                <li>
+                    <a href="./index.html">
+                    <img src="./images/back.png" alt="Back" width="20" />
+                    Back
+                </li>
+            </ul>
+        </main>
+    </body>
+</html>
